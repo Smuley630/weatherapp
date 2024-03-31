@@ -7,6 +7,7 @@ const weatherREQ =require('./utils/weatherreport')
 // console.log(__dirname)
 // console.log(path.join(__dirname,'../public'))
 const app = express()
+const port = process.env.PORT || 3000
 
 //define path for express configuration
 const publicDirectypath = path.join(__dirname,'../public')
@@ -106,7 +107,7 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("server running on port 3000")
+app.listen(port,()=>{
+    console.log("server running on port "+ port)
 })
 
