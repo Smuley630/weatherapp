@@ -8,7 +8,11 @@ footer{
 border-top:1px solid #333393;
 }
 a{
-    color: aqua;
+    color: rgb(18, 92, 92);font-size: 30px;
+}
+#heading{
+    color: rgb(13, 82, 146);
+    font-family: cursive;
 }
 button{
     cursor: pointer;
